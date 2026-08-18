@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+public interface Catalogable{
 
-public interface Catalogable {
+    String getCodigo();
+
 }
