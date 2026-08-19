@@ -35,7 +35,7 @@ public abstract class Material implements Catalogable{
 
     //Metodo Concreto
     public void mostrarInfo(){
-        System.out.printf("Resultado de la consulta: %n[%s] %s (%d) --- %b%n", getTipo(), this.titulo, this.anioPublicacion, this.libroDisponible);
+        System.out.printf("%n[%s] %s (%d) --- %b%n", getTipo(), this.titulo, this.anioPublicacion, this.libroDisponible);
     }
 
 }

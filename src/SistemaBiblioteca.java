@@ -17,7 +17,8 @@ public class SistemaBiblioteca {
 
     public void mostrarCatalogo(){
         for (Map.Entry<String, Material> m : catalogo.entrySet()){
-            System.out.println(m.getKey() +"\n"+ m.getValue() );
+            m.getValue().mostrarInfo();
+            //System.out.println(m.getKey() +"\n"+ m.getValue());
         }
     }
 
