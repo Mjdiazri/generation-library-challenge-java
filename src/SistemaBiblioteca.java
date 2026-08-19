@@ -1,9 +1,12 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SistemaBiblioteca {
 
     private Map<String, Material> catalogo = new HashMap<>();
+    private Map<String, ArrayList<String>> listaEspera = new HashMap<>();
 
     //metodo
     public void registrarMaterial(Material m){
@@ -19,6 +22,21 @@ public class SistemaBiblioteca {
             System.out.println(m.getKey() +"\n"+ m.getValue() );
         }
     }
+
+    public void agregarEspera(String codigoMaterial, String usuario) {
+        if (listaEspera.get(codigoMaterial) == null) {
+            listaEspera.putIfAbsent(codigoMaterial, new ArrayList<>());
+            listaEspera.get(codigoMaterial).add(usuario);
+        } else {
+            listaEspera.get(codigoMaterial).add(usuario);
+        }
+    }
+
+
+    public String siguienteEnEspera(String codigoMaterial){
+         return listaEspera.get(codigoMaterial).remove(0);
+    }
+
 
 
 }
