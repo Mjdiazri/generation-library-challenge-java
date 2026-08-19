@@ -9,6 +9,7 @@ public class Main {
         Libro libro2 = new Libro("L-002", "Murdoku", 2025, true, "Manuel Garand", "isbn-10: 628-7915-21-8");
         Revista revista1 = new Revista("R-001", "Muy interesante", 2026, false, 12, "Ciencia");
         Revista revista2 = new Revista("R-002", "Motos", 2001, true, 1, "Entretenimiento");
+        Libro libro3 = new Libro("L-001", "El rey de hierro", 2027, false, "Maurice Druon", "isbn-56: 008-1839-47-8");
 
         //Registro en catalogo
         SistemaBiblioteca biblioteca = new SistemaBiblioteca();
@@ -16,6 +17,9 @@ public class Main {
         biblioteca.registrarMaterial(libro2);
         biblioteca.registrarMaterial(revista1);
         biblioteca.registrarMaterial(revista2);
+
+        //Prueba doble libro
+        biblioteca.registrarMaterial(libro3);
 
         //Busqueda por codigo Catalogo
         System.out.println("\n------------ Busqueda Catalogo --------------------");
@@ -47,6 +51,9 @@ public class Main {
         //Mostrar catalogo
         System.out.println("\n----------- Mostrar Catalogo ---------------------");
         biblioteca.mostrarCatalogo();
+
+
+
 
 
     }
