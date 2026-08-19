@@ -51,10 +51,5 @@ public class Main {
         //Mostrar catalogo
         System.out.println("\n----------- Mostrar Catalogo ---------------------");
         biblioteca.mostrarCatalogo();
-
-
-
-
-
     }
 }
