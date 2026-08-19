@@ -23,4 +23,18 @@ public class Libro extends Material{
     public String getTipo() {
         return "Libro";
     }
+
+    //ToSTRING
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                ", codigo='" + codigo + '\'' +
+                ", titulo='" + titulo + '\'' +
+                "autor='" + autor + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", anioPublicacion=" + anioPublicacion +
+                ", libroDisponible=" + libroDisponible +
+                '}';
+    }
 }

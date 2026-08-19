@@ -22,4 +22,18 @@ public class Revista extends Material{
     public String getTipo(){
         return "Revista";
     }
+
+    //ToString
+
+    @Override
+    public String toString() {
+        return "Revista{" +
+                ", codigo='" + codigo + '\'' +
+                ", titulo='" + titulo + '\'' +
+                ", anioPublicacion=" + anioPublicacion +
+                ", libroDisponible=" + libroDisponible +
+                "edicion=" + edicion +
+                ", tematica='" + tematica + '\'' +
+                '}';
+    }
 }

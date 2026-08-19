@@ -37,4 +37,5 @@ public abstract class Material implements Catalogable{
     public void mostrarInfo(){
         System.out.printf("Resultado de la consulta: %n[%s] %s (%d) --- %b%n", getTipo(), this.titulo, this.anioPublicacion, this.libroDisponible);
     }
+
 }
