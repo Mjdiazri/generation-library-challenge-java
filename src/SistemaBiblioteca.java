@@ -1,12 +1,10 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SistemaBiblioteca {
 
     private Map<String, Material> catalogo = new HashMap<>();
     private Map<String, ArrayList<String>> listaEspera = new HashMap<>();
+    private Set<String> miembros = new HashSet<>();
 
     //metodo
     public void registrarMaterial(Material m){
@@ -37,6 +35,13 @@ public class SistemaBiblioteca {
          return listaEspera.get(codigoMaterial).remove(0);
     }
 
+    public boolean registrarMiembro(String usuario){
+        return miembros.add(usuario);
+    }
+
+    public boolean tieneMembresia(String usuario){
+        return miembros.contains(usuario);
+    }
 
 
 }
